@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { changeRoute } from '../actions';
+import { selectCategory } from '../actions';
 
 
 function mapStateToProps(state) {
@@ -9,7 +9,7 @@ function mapStateToProps(state) {
   
 function mapDispatchToProps(dispatch) {
     return {
-        switchTab: route => dispatch(changeRoute(route))
+        switchTab: route => dispatch(selectCategory(route))
     };
 }
 
